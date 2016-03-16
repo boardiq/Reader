@@ -31,6 +31,9 @@
 
 - (id)processSingleTap:(UITapGestureRecognizer *)recognizer;
 
+@property (nonatomic, readonly) CGFloat pageWidth;
+@property (nonatomic, readonly) CGFloat pageHeight;
+
 @end
 
 #pragma mark -

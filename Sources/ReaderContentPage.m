@@ -28,6 +28,13 @@
 #import "ReaderContentTile.h"
 #import "CGPDFDocument.h"
 
+@interface ReaderContentPage ()
+
+@property (nonatomic) CGFloat pageWidth;
+@property (nonatomic) CGFloat pageHeight;
+
+@end
+
 @implementation ReaderContentPage
 {
 	NSMutableArray *_links;
@@ -38,12 +45,10 @@
 
 	NSInteger _pageAngle;
 
-	CGFloat _pageWidth;
-	CGFloat _pageHeight;
-
 	CGFloat _pageOffsetX;
 	CGFloat _pageOffsetY;
 }
+
 
 #pragma mark - ReaderContentPage class methods
 
