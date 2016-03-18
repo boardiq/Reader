@@ -36,19 +36,6 @@
 @end
 
 @implementation ReaderContentPage
-{
-	NSMutableArray *_links;
-
-	CGPDFDocumentRef _PDFDocRef;
-
-	CGPDFPageRef _PDFPageRef;
-
-	NSInteger _pageAngle;
-
-	CGFloat _pageOffsetX;
-	CGFloat _pageOffsetY;
-}
-
 
 #pragma mark - ReaderContentPage class methods
 

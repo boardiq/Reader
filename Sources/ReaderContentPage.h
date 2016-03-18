@@ -25,7 +25,18 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ReaderContentPage : UIView
+@interface ReaderContentPage : UIView {
+    NSMutableArray *_links;
+    
+    CGPDFDocumentRef _PDFDocRef;
+    
+    CGPDFPageRef _PDFPageRef;
+    
+    NSInteger _pageAngle;
+    
+    CGFloat _pageOffsetX;
+    CGFloat _pageOffsetY;
+}
 
 - (instancetype)initWithURL:(NSURL *)fileURL page:(NSInteger)page password:(NSString *)phrase;
 
